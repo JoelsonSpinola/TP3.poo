@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+  <children>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="User">
+          <items>
+            <MenuItem fx:id="createFun" mnemonicParsing="false" onAction="#initMenuAction" text="Regist Employ" />
+            <MenuItem mnemonicParsing="false" onAction="#MakeLogin" text="Login" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Stock">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <MenuItem fx:id="AddPro" mnemonicParsing="false" onAction="#ADDmOreProduc" text="Add Product" />
+            <MenuItem fx:id="" mnemonicParsing="false" onAction="#ADDClient" text="Regist Client" />
+          </items>
+        </Menu>
+        <Menu fx:id="" mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#HelpAction" text="Add Question" />
+               </items></Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text fill="#ee8617" layoutX="68.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Summer" textAlignment="CENTER" wrappingWidth="504.7294921875">
+               <font>
+                  <Font name="Dyuthi Regular" size="71.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </children>
+</VBox>

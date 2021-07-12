@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:controller="controller.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#ee8617" layoutX="14.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summer" textAlignment="CENTER" wrappingWidth="307.7294921875">
+               <font>
+                  <Font name="Dyuthi Regular" size="89.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtLogName" layoutX="99.0" layoutY="188.0" prefHeight="38.0" prefWidth="171.0" promptText="Nome usuario" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txtLogPass" layoutX="99.0" layoutY="226.0" prefHeight="38.0" prefWidth="171.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0 px;" />
+            <Button fx:id="btLogin1" onAction="#Averiguacao" layoutX="99.0" layoutY="273.0" mnemonicParsing="false" text="Login" />
+            <Button layoutX="199.0" layoutY="273.0" mnemonicParsing="false" text="Cancele" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
